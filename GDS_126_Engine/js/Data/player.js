@@ -21,72 +21,61 @@ var playerData ={
 	info:{
 		src:`images/snale.png`
 	},
-	states:{
-		//The idle animation 
-    	idle:
-		{
-			fps:15,
-			cycle:true,
-			frames:
-			[
-				{width:128, height:128, startX:512, startY:512},
-				{width:128, height:128, startX:512, startY:512}
-				
-			]
-		},
-		//The walwidth:128, height:128,
-		walk:
-		{
-			fps:1,
-			cycle:true,
-			frames:
-			[
-				{width:128, height:128, startX:0, startY:0},
-				{width:128, height:128, startX:128, startY:0},
-				{width:128, height:128, startX:256, startY:0},
-				{width:128, height:128, startX:384, startY:0},
-				{width:128, height:128, startX:512, startY:0}
-			]
-		},
-		//The jump animation 
-		jump:
-		{
-			fps:15,
-			cycle:false,
-			frames:
-			[
-				{width:128, height:128, startX:640, startY:0}
-			]
-		},
-		//The crouch animation 
-		crouch:
-		{
-			fps:15,
-			cycle:true,
-			frames:
-			[
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:896, startY:0}
-			]
-		},
-		//The attack animation 
-		attack:
-		{
-			fps:3,
-			cycle:false,
-			//width:300,
-			frames:
-			[
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0}
+	states: {
+        // The attack animation (First row in the sprite sheet)
+        attack: {
+            fps: 15,
+            cycle: false,
+            frames: [
+                { width: 128, height: 128, startX: 0, startY: 0 },
+                { width: 128, height: 128, startX: 128, startY: 0 },
+                { width: 128, height: 128, startX: 256, startY: 0 },
+                { width: 128, height: 128, startX: 384, startY: 0 },
+                { width: 128, height: 128, startX: 512, startY: 0 }
+            ]
+        },
+        // The walk animation (Second row in the sprite sheet)
+        walk: {
+            fps: 15,
+            cycle: true,
+            frames: [
+                { width: 128, height: 128, startX: 0, startY: 128 },
+                { width: 128, height: 128, startX: 128, startY: 128 },
+                { width: 128, height: 128, startX: 256, startY: 128 },
+                { width: 128, height: 128, startX: 384, startY: 128 },
+                { width: 128, height: 128, startX: 512, startY: 128 }
+            ]
+        },
+        // The jump animation (Third row in the sprite sheet)
+        jump: {
+            fps: 15,
+            cycle: false,
+            frames: [
+                { width: 128, height: 128, startX: 0, startY: 256 }
+            ]
+        },
+        // The crouch animation (Fourth row in the sprite sheet)
+        crouch: {
+            fps: 15,
+            cycle: true,
+            frames: [
+                { width: 128, height: 128, startX: 0, startY: 384 },
+                { width: 128, height: 128, startX: 128, startY: 384 },
+                { width: 128, height: 128, startX: 256, startY: 384 },
+                { width: 128, height: 128, startX: 384, startY: 384 },
+                { width: 128, height: 128, startX: 512, startY: 384 }
+            ]
+        },
+        // The idle animation (Bottom row in the sprite sheet)
+        idle: {
+            fps: 15,
+            cycle: true,
+            frames: [
+                { width: 128, height: 128, startX: 0, startY: 512 },
+                { width: 128, height: 128, startX: 128, startY: 512 },
+                { width: 128, height: 128, startX: 256, startY: 512 },
+                { width: 128, height: 128, startX: 384, startY: 512 },
+                { width: 128, height: 128, startX: 512, startY: 512 }
 				
 			]
 		}
