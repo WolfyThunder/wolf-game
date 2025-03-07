@@ -30,7 +30,7 @@ var cave = new Grid(caveData, {world:level, x:1024, tileHeight:64, tileWidth:64}
 var caveBack = new Grid(caveBackData, {world:level, x:1024, tileHeight:64, tileWidth:64});
 //cave hitbox grid
 var caveHit = new Grid(caveHitData, {world:level, x:1024, tileHeight:64, tileWidth:64});
-
+var caveOver = new Grid(caveOverData, {world:level, x:1024, tileHeight:64, tileWidth:64});
 
 
 //This is a group used for collisions
@@ -49,14 +49,14 @@ rects.add([ground,plat])
 
 //used to render the sprites
 var sprites = new Group();
-sprites.add([caveBack.grid])
+sprites.add([caveBack.grid,caveOver.grid])
 
 var front = new Group()
 front.add([cave.grid])
 
 //list of items to be rendered in the level
 var levelItems=new Group();
-levelItems.add([caveBack.grid, ground, plat, cave.grid]);
+levelItems.add([caveBack.grid, caveOver, ground, plat, cave.grid]);
 
 //Very back background
 var sky = new GameObject({width:canvas.width, height:canvas.height, color:"cyan"})

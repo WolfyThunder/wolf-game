@@ -5,10 +5,10 @@ var caveData ={
 			[0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1],
 			[2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2],
 			[3,x,x,x,x,x,x,x,x,9,x,x,x,x,x,x,x,9,x,x,x,x,x,x,x,9,x,x,x,x,x,x,x,x,3],
-			[3,x,x,12,x,x,x,x,x,10,x,x,12,x,x,x,x,10,x,x,x,x,x,12,x,10,x,x,x,x,x,x,x,x,3],
 			[3,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,x,3],
-			[x,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,13,x,x,x,10,x,x,x,x,x,x,x,x,x],
-			[x,x,x,x,x,x,13,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,13,x,x,x,x],
+			[3,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,x,3],
+			[x,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,x,x],
+			[x,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,x,x],
 			[x,x,x,x,x,x,x,x,x,11,x,x,x,x,x,x,x,11,x,x,x,x,x,x,x,11,x,x,x,x,x,x,x,x,x]
 			
 			
@@ -106,6 +106,21 @@ var caveData ={
 		},
 		states:caveData.states
 		}
+		var caveOverData ={
+			info:{
+				layout:[
+				[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x],
+				[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x],
+				[x,x,x,13,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,12,x,x,x],
+				[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,12,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x],
+				[x,x,x,x,x,x,x,x,x,x,x,x,x,13,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x],
+				[x,x,x,x,x,12,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,13,x,x,x,x,x,x,x,x,x,x,x],
+				[x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x,x],
+				],
+				src:`images/bg2.png`,
+			},
+			states:caveData.states
+			}
 
 		var caveHitData={
 			info:{
