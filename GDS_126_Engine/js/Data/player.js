@@ -62,8 +62,7 @@ var playerData ={
                 { width: 128, height: 128, startX: 0, startY: 384 },
                 { width: 128, height: 128, startX: 128, startY: 384 },
                 { width: 128, height: 128, startX: 256, startY: 384 },
-                { width: 128, height: 128, startX: 384, startY: 384 },
-                { width: 128, height: 128, startX: 512, startY: 384 }
+              
             ]
         },
         // The idle animation (Bottom row in the sprite sheet)
@@ -73,9 +72,7 @@ var playerData ={
             frames: [
                 { width: 128, height: 128, startX: 0, startY: 512 },
                 { width: 128, height: 128, startX: 128, startY: 512 },
-                { width: 128, height: 128, startX: 256, startY: 512 },
-                { width: 128, height: 128, startX: 384, startY: 512 },
-                { width: 128, height: 128, startX: 512, startY: 512 }
+               
 				
 			]
 		}
