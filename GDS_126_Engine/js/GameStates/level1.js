@@ -9,7 +9,7 @@ var stage = new GameObject({width:canvas.width, height:canvas.height});
 var level = new GameObject({x:0,y:0});
 
 //Avatar
-var wiz = new GameObject({width:128, height:128, spriteData:playerData}).makeSprite(playerData)
+var wiz = new GameObject({width:200, height:200, spriteData:playerData}).makeSprite(playerData)
 wiz.force=1
 
 //The ground
@@ -87,10 +87,10 @@ var currentBullet = 0;
 for(let i=0; i<100; i++)
 {
 	bullets[i] = new GameObject({width:64, height:64})
-	bullets[i].img.src="images/fireball.png"
-	bullets[i].makeSprite(playerData)
+	//bullets[i].img.src="images/fireball.png"
+	bullets[i].makeSprite(proData)
 	bullets[i].y=-10000
-	bullets[i].changeState(`walk`)
+	
 }
 
 console.log(bullets)
@@ -157,7 +157,7 @@ gameStates[`level1`] = function()
 	{
 		if(canShoot)
 		{
-			wiz.changeState(`attack`)
+			//wiz.changeState(`attack`)
 			shotTimer = shotDelay
 			console.log(`Boom`)
 
@@ -302,6 +302,7 @@ gameStates[`level1`] = function()
 		if(bullets[i].overlap(stage)) bullets[i].vy+=1;
 		bullets[i].move()
 		bullets[i].play(function(){return}).drawSprite()
+		//bullets[i].render()
 		//bullets[i].angle+=10
 		while(g1.collide(bullets[i].bottom) && bullets[i].vy>=0)
 		{
