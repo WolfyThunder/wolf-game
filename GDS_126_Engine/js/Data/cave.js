@@ -5,10 +5,10 @@ var caveData ={
 			[0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1],
 			[2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2],
 			[3,x,x,x,x,x,x,x,x,9,x,x,x,x,x,x,x,9,x,x,x,x,x,x,x,9,x,x,x,x,x,x,x,x,3],
+			[3,x,x,12,x,x,x,x,x,10,x,x,12,x,x,x,x,10,x,x,x,x,x,12,x,10,x,x,x,x,x,x,x,x,3],
 			[3,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,x,3],
-			[3,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,x,3],
-			[x,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,x,x],
-			[x,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,x,x],
+			[x,x,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,13,x,x,x,10,x,x,x,x,x,x,x,x,x],
+			[x,x,x,x,x,x,13,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,x,x,x,10,x,x,x,x,13,x,x,x,x],
 			[x,x,x,x,x,x,x,x,x,11,x,x,x,x,x,x,x,11,x,x,x,x,x,x,x,11,x,x,x,x,x,x,x,x,x]
 			
 			
@@ -78,6 +78,16 @@ var caveData ={
 				fps:1,
 				cycle:false,
 				frames:[{width:64, height:64, startX:704, startY:0}]
+			},
+			{
+				fps:1,
+				cycle:false,
+				frames:[{width:64, height:64, startX:768, startY:0}]
+			},
+			{
+				fps:1,
+				cycle:false,
+				frames:[{width:64, height:64, startX:832, startY:0}]
 			},
 		]
 	}
