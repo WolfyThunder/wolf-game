@@ -31,7 +31,8 @@ var playerData ={
                 { width: 128, height: 128, startX: 128, startY: 0 },
                 { width: 128, height: 128, startX: 256, startY: 0 },
                 { width: 128, height: 128, startX: 384, startY: 0 },
-                { width: 128, height: 128, startX: 512, startY: 0 }
+                { width: 128, height: 128, startX: 512, startY: 0 },
+                { width: 128, height: 128, startX: 640, startY: 0 },
             ]
         },
         // The walk animation (Second row in the sprite sheet)
@@ -43,15 +44,19 @@ var playerData ={
                 { width: 128, height: 128, startX: 128, startY: 128 },
                 { width: 128, height: 128, startX: 256, startY: 128 },
                 { width: 128, height: 128, startX: 384, startY: 128 },
-                { width: 128, height: 128, startX: 512, startY: 128 }
+                { width: 128, height: 128, startX: 512, startY: 128 },
             ]
         },
         // The jump animation (Third row in the sprite sheet)
         jump: {
             fps: 15,
-            cycle: false,
+            cycle: true,
             frames: [
-                { width: 128, height: 128, startX: 0, startY: 256 }
+                { width: 128, height: 128, startX: 0, startY: 256 },
+                { width: 128, height: 128, startX: 128, startY: 256 },
+                { width: 128, height: 128, startX: 256, startY: 256 },
+                { width: 128, height: 128, startX: 384, startY: 256 },
+                { width: 128, height: 128, startX: 512, startY: 256 },
             ]
         },
         // The crouch animation (Fourth row in the sprite sheet)

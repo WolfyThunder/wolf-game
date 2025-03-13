@@ -138,9 +138,9 @@ gameStates[`level1`] = function()
 	}
 	if(keys[`W`] && wiz.canJump )
 	{
+		wiz.changeState(`jump`)
 		wiz.canJump = false;
 		wiz.vy = wiz.jumpHeight;
-		wiz.changeState(`jump`)
 		sounds.play(`jump`,1)
 	}
 	shotTimer--;
@@ -157,7 +157,7 @@ gameStates[`level1`] = function()
 	{
 		if(canShoot)
 		{
-			//wiz.changeState(`attack`)
+			wiz.changeState(`attack`)
 			shotTimer = shotDelay
 			console.log(`Boom`)
 
